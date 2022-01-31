@@ -304,8 +304,9 @@ def main():
         render(board, c_choice, h_choice)
         print('DRAW!')
 
-    exit()
 
-
+endless_play = 0
 if __name__ == '__main__':
-    main()
+    while(endless_play!=1):
+        main()
+        endless_play=input("enter 1 if you don't want to play again.")
